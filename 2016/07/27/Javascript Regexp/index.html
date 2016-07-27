@@ -84,31 +84,25 @@
 
 
 
-<meta name="description" content="JavaScript Regular Expression@(keywords)[js,regexp]
-[TOC]
-1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
+<meta name="description" content="JavaScript Regular Expression1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
 1.2 new RegExp()12i.e.var reg = new RegExp(&apos;pattern&apos;,gim);
 2 正则的修饰符
-g: global，全局匹配i: insensi">
+g: global，全局匹配i: insensitive/ignoreCase，忽略大小写m: multi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2016/07/27/Javascript Regexp/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JavaScript Regular Expression@(keywords)[js,regexp]
-[TOC]
-1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
+<meta property="og:description" content="JavaScript Regular Expression1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
 1.2 new RegExp()12i.e.var reg = new RegExp(&apos;pattern&apos;,gim);
 2 正则的修饰符
-g: global，全局匹配i: insensi">
-<meta property="og:updated_time" content="2016-07-26T16:49:22.000Z">
+g: global，全局匹配i: insensitive/ignoreCase，忽略大小写m: multi">
+<meta property="og:updated_time" content="2016-07-27T07:03:18.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="JavaScript Regular Expression@(keywords)[js,regexp]
-[TOC]
-1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
+<meta name="twitter:description" content="JavaScript Regular Expression1 创建正则的方式1.1 literal12i.e.var reg = /pattern/gim;
 1.2 new RegExp()12i.e.var reg = new RegExp(&apos;pattern&apos;,gim);
 2 正则的修饰符
-g: global，全局匹配i: insensi">
+g: global，全局匹配i: insensitive/ignoreCase，忽略大小写m: multi">
 
 
 
@@ -291,13 +285,12 @@ g: global，全局匹配i: insensi">
       
 
       
-        <h1 id="JavaScript-Regular-Expression"><a href="#JavaScript-Regular-Expression" class="headerlink" title="JavaScript Regular Expression"></a>JavaScript Regular Expression</h1><p>@(keywords)[js,regexp]</p>
-<p>[TOC]</p>
-<h2 id="1-创建正则的方式"><a href="#1-创建正则的方式" class="headerlink" title="1 创建正则的方式"></a>1 创建正则的方式</h2><h3 id="1-1-literal"><a href="#1-1-literal" class="headerlink" title="1.1 literal"></a>1.1 <code>literal</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">i.e.</div><div class="line">var reg = <span class="regexp">/pattern/gim</span>;</div></pre></td></tr></table></figure>
+        <h1 id="JavaScript-Regular-Expression"><a href="#JavaScript-Regular-Expression" class="headerlink" title="JavaScript Regular Expression"></a>JavaScript Regular Expression</h1><h2 id="1-创建正则的方式"><a href="#1-创建正则的方式" class="headerlink" title="1 创建正则的方式"></a>1 创建正则的方式</h2><h3 id="1-1-literal"><a href="#1-1-literal" class="headerlink" title="1.1 literal"></a>1.1 <code>literal</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">i.e.</div><div class="line">var reg = <span class="regexp">/pattern/gim</span>;</div></pre></td></tr></table></figure>
 <h3 id="1-2-new-RegExp"><a href="#1-2-new-RegExp" class="headerlink" title="1.2 new RegExp()"></a>1.2 <code>new RegExp()</code></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">i.e.</div><div class="line">var reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'pattern'</span>,gim);</div></pre></td></tr></table></figure>
 <h2 id="2-正则的修饰符"><a href="#2-正则的修饰符" class="headerlink" title="2 正则的修饰符"></a>2 正则的修饰符</h2><blockquote>
-<p><code>g:</code> global，全局匹配<br><code>i:</code> insensitive/ignoreCase，忽略大小写<br><code>m:</code> multiline，多行匹配，修改^和$在正则表达式中的作用，让它们分别表示行首和行尾<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">i.e.</div><div class="line">var reg = <span class="regexp">/^b/</span>,</div><div class="line">    str = <span class="string">'kobe\nbryant'</span>;</div><div class="line">reg.exec(str);  <span class="comment">// return null</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^b/m</span>,</div><div class="line">    str = <span class="string">'kobe\nbryant'</span>;</div><div class="line">reg.exec(str); <span class="comment">// return ['b']</span></div></pre></td></tr></table></figure></p>
+<p><code>g:</code> global，全局匹配<br><code>i:</code> insensitive/ignoreCase，忽略大小写<br><code>m:</code> multiline，多行匹配，修改^和$在正则表达式中的作用，让它们分别表示行首和行尾</p>
 </blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">i.e.</div><div class="line">var reg = <span class="regexp">/^b/</span>,</div><div class="line">    str = <span class="string">'kobe\nbryant'</span>;</div><div class="line">reg.exec(str);  <span class="comment">// return null</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^b/m</span>,</div><div class="line">    str = <span class="string">'kobe\nbryant'</span>;</div><div class="line">reg.exec(str); <span class="comment">// return ['b']</span></div></pre></td></tr></table></figure>
 <h2 id="3-正则的基本规则"><a href="#3-正则的基本规则" class="headerlink" title="3 正则的基本规则"></a>3 正则的基本规则</h2><h3 id="单个字符的表示"><a href="#单个字符的表示" class="headerlink" title="单个字符的表示"></a>单个字符的表示</h3><table>
 <thead>
 <tr>
