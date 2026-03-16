@@ -1,4 +1,4 @@
-import{d as jt,s as kt,r as $t,e as Et,f as St,c as It,o as Tt,_ as Mt}from"./index-taI2fZ3w.js";/*!
+import{d as jt,s as kt,r as $t,e as Et,f as St,c as It,o as Tt,_ as Mt}from"./index-BQWB3fo6.js";/*!
  * artplayer.js v5.3.0
  * Github: https://github.com/zhw2590582/ArtPlayer
  * (c) 2017-2025 Harvey Zack
